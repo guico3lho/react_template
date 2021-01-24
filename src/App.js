@@ -1,10 +1,22 @@
-
-
+import { BrowserRouter, Route } from "react-router-dom"
+import Navbar from "./components/Navbar"
+import Home from "./pages/Home"
+import About from "./pages/About"
 function App() {
   return (
-   <div>
-     <h2> Hi, i'm a template ✍</h2>
-   </div>
+    <BrowserRouter>
+
+    <Route path="/">
+      <Navbar />
+    </Route>
+    <Route exact path="/home">
+      <Home />  
+    </Route>
+    <Route path="/about">
+      <About/>
+    </Route>
+
+  </BrowserRouter>
   );
 }
 
