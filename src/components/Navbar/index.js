@@ -1,5 +1,4 @@
 import { Header, StyledLink } from "./styles"
-import "./styles.css"
 
 const Navbar = () => {
     return (

@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import ColorsProvider from "./assets/styles/ColorsProvider"
+import GlobalStyle from "./assets/styles/global"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ColorsProvider>
+      <GlobalStyle />
+
+      <App />
+
+    </ColorsProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

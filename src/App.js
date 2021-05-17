@@ -3,13 +3,17 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" component={Navbar} />
+    
+    <main>
+      <BrowserRouter>
+        <Switch>
+      
 
-        <Route exact path="/home" component={Home} />
-      </Switch>
-    </BrowserRouter>
+          <Route exact path="/home" component={Home} />
+        </Switch>
+      </BrowserRouter>
+   
+    </main>
   );
 }
 
